@@ -1,0 +1,140 @@
+{
+    // Użyj funkcji IntelliSense, aby uzyskać informacje o możliwych atrybutach.
+    // Najedź kursorem, aby wyświetlić opisy istniejących atrybutów.
+    // Aby uzyskać więcej informacji, odwiedź stronę: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "args": [
+                "generator"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "name": "Yeoman generator",
+            "program": "${workspaceFolder}/node_modules/yo/lib/cli.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "args": [
+                "-u",
+                "tdd",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "name": "Mocha Tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Attach using Process Id",
+            "type": "python",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        },
+        {
+            "name": "Attach to Edge",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-msedge",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "address": "TCP/IP address of process to be debugged",
+            "localRoot": "${workspaceFolder}",
+            "name": "Attach to Remote",
+            "port": 9229,
+            "remoteRoot": "Absolute path to the remote directory containing the program",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "command": "npm start",
+            "name": "Run npm start",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "command": "npm start",
+            "name": "Run npm start",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "type": "antlr-debug",
+            "request": "launch",
+            "name": "Debug Current Grammar",
+            "input": "input.txt",
+            "visualParseTree": true
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "command": "npm start",
+            "name": "Run npm start",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "address": "TCP/IP address of process to be debugged",
+            "localRoot": "${workspaceFolder}",
+            "name": "Attach to Remote",
+            "port": 9229,
+            "remoteRoot": "Absolute path to the remote directory containing the program",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "type": "android",
+            "request": "attach",
+            "name": "Android Attach",
+            "appSrcRoot": "${workspaceRoot}/app/src/main",
+            "adbPort": 5037,
+            "processId": "${command:PickAndroidProcess}"
+        },
+        {
+            "type": "android",
+            "request": "launch",
+            "name": "Android launch",
+            "appSrcRoot": "${workspaceRoot}/app/src/main",
+            "apkFile": "${workspaceRoot}/app/build/outputs/apk/debug/app-debug.apk",
+            "adbPort": 5037
+        },
+        {
+            "type": "android",
+            "request": "attach",
+            "name": "Android attach",
+            "appSrcRoot": "${workspaceRoot}/app/src/main",
+            "adbPort": 5037,
+            "processId": "${command:PickAndroidProcess}"
+        }
+    ]
+}
